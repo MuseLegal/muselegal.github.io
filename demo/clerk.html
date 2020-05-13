@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+Clerk - Judicata
+</title>
+
+        <link rel="stylesheet" href="https://cloud.typography.com/6546452/7794152/css/fonts.css"/>
+
+        <link rel="stylesheet" href="../static/d3aeb189313a461a0f6a182b783a20b1b9db2c42/css/judicata.css"/>
+        <link rel="icon" type="image/x-icon" href="../static/d3aeb189313a461a0f6a182b783a20b1b9db2c42/img/favicon.ico" />
+        <script type="text/javascript">
+            
+            
+    "use strict";
+    var require = {
+    "paths": {
+        "text": "libs/text",
+        "uri": "libs/uri",
+        "stripe": "https://js.stripe.com/v2/?1",
+        "jquery": "libs/jquery-1.11.1"
+    },
+    "deps": [
+        "libs/menu"
+    ],
+    "shim": {
+        "libs/stickyfill": {
+            "exports": "Stickyfill"
+        },
+        "libs/d3.v4.min": {
+            "exports": "d3"
+        },
+        "libs/underscore": {
+            "exports": "_"
+        },
+        "libs/jquery.placeholder.min": [
+            "jquery"
+        ],
+        "libs/bootstrap.min": [
+            "jquery"
+        ],
+        "libs/bootstrap.carousel": {
+            "deps": [
+                "jquery"
+            ],
+            "exports": "jQuery.fn.carousel"
+        },
+        "libs/bootstrap.transition": {
+            "deps": [
+                "jquery"
+            ],
+            "exports": "jQuery.fn.transition"
+        },
+        "libs/bootstrap.tooltip": {
+            "deps": [
+                "jquery"
+            ],
+            "exports": "jQuery.fn.tooltip"
+        },
+        "libs/bootstrap.modal": {
+            "deps": [
+                "jquery"
+            ],
+            "exports": "jQuery.fn.modal"
+        },
+        "libs/bootstrap.popover": {
+            "deps": [
+                "libs/bootstrap.tooltip"
+            ],
+            "exports": "jQuery.fn.popover"
+        },
+        "libs/jquery.payment": [
+            "jquery"
+        ],
+        "libs/jquery.tablesort": [
+            "jquery"
+        ]
+    },
+    "map": {
+        "*": {
+            "underscore": "libs/underscore"
+        }
+    },
+    "baseUrl": "/static/d3aeb189313a461a0f6a182b783a20b1b9db2c42/js"
+};
+        </script>
+        <script type="text/javascript">
+            window.config = {"urls": {"print": "/ajax/case/print", "requestInfo": "/request-clerk-demo"}, "coaFilters": [{"name": "Accounting", "id": 2, "products": [1], "values": [2]}, {"name": "Breach of Duty of Care", "id": 201, "parent_id": 473, "products": [1], "values": [201]}, {"name": "Aiding and Abetting", "id": 4, "products": [1], "values": [4]}, {"name": "False Representation", "id": 265, "parent_id": 423, "products": [1], "values": [265]}, {"name": "Foreclosure of Lien", "id": 266, "products": [1], "values": [266]}, {"name": "Foreclosure of Mortgage", "id": 267, "products": [1], "values": [267]}, {"name": "Bad Faith", "id": 12, "products": [1], "values": [12]}, {"name": "Failure to Pay for Services", "id": 258, "products": [1], "values": [258]}, {"name": "Constructive Fraud", "id": 270, "parent_id": 423, "products": [1], "values": [270]}, {"name": "Securities Fraud", "id": 273, "products": [1], "values": [273]}, {"name": "Condemnation", "id": 21, "parent_id": 410, "products": [1], "values": [21, 599]}, {"name": "Account Stated", "id": 539, "parent_id": 394, "products": [1], "values": [539]}, {"name": "Dangerous Condition", "id": 28, "parent_id": 473, "products": [1], "values": [28, 615]}, {"name": "Failure to Pay on Contract", "id": 427, "parent_id": 479, "products": [1], "values": [427]}, {"name": "Assault or Battery", "id": 475, "values": [9, 545, 13]}, {"name": "Breach of Contract", "id": 552, "parent_id": 479, "products": [1], "values": [198, 552, 378]}, {"name": "Libel", "id": 297, "parent_id": 400, "products": [1], "values": [297, 298, 299, 372]}, {"name": "Breach of Covenant of Good Faith and Fair Dealing", "id": 555, "parent_id": 199, "products": [1], "values": [555]}, {"name": "Loss of Profits", "id": 301, "products": [1], "values": [301]}, {"name": "Malpractice", "id": 304, "values": [304, 305, 306, 307, 308, 487, 325, 327], "parent_id": 473, "products": [1], "children": [{"name": "Legal Malpractice", "id": 307, "parent_id": 304, "products": [1], "values": [307]}, {"name": "Medical Malpractice", "id": 308, "parent_id": 304, "products": [1], "values": [306, 308, 487, 325]}]}, {"name": "Breach of Statutory Duty", "id": 562, "products": [1], "values": [562]}, {"name": "Legal Malpractice", "id": 307, "parent_id": 304, "products": [1], "values": [307]}, {"name": "Medical Malpractice", "id": 308, "parent_id": 304, "products": [1], "values": [306, 308, 487, 325]}, {"name": "Misappropriation of Likeness", "id": 310, "parent_id": 436, "products": [1], "values": [310]}, {"name": "Misappropriation of Trade Secrets", "id": 311, "parent_id": 436, "products": [1], "values": [311]}, {"name": "Misrepresentation", "id": 313, "parent_id": 423, "products": [1], "values": [313, 314, 315, 316, 317, 319]}, {"name": "Failure to Protect", "id": 59, "products": [1], "values": [59]}, {"name": "Money Due", "id": 320, "parent_id": 394, "products": [1], "values": [320]}, {"name": "Failure to Supervise", "id": 65, "parent_id": 473, "products": [1], "values": [65]}, {"name": "Money Lent", "id": 322, "parent_id": 394, "products": [1], "values": [322]}, {"name": "Failure to Warn", "id": 67, "parent_id": 473, "products": [1], "values": [67]}, {"name": "Gross Negligence", "id": 324, "parent_id": 473, "products": [1], "values": [324]}, {"name": "False Advertising", "id": 69, "parent_id": 455, "products": [1], "values": [69]}, {"name": "Slander of Title", "id": 481, "products": [1], "values": [362]}, {"name": "False Promise", "id": 72, "parent_id": 423, "products": [1], "values": [72]}, {"name": "Negligent Design", "id": 329, "parent_id": 473, "products": [1], "values": [329]}, {"name": "Fraudulent Inducement", "id": 76, "parent_id": 423, "products": [1], "values": [76]}, {"name": "Negligent Maintenance", "id": 333, "parent_id": 473, "products": [1], "values": [333]}, {"name": "Negligent Supervision", "id": 335, "parent_id": 473, "products": [1], "values": [335]}, {"name": "Negligent Training", "id": 337, "parent_id": 473, "products": [1], "values": [337]}, {"name": "Quiet Title", "id": 480, "products": [1], "values": [121]}, {"name": "Breach of Trust", "id": 563, "parent_id": 479, "products": [1], "values": [563, 436]}, {"name": "Failure to Perform", "id": 57, "parent_id": 479, "products": [1], "values": [57]}, {"name": "Recovery of Refund of Taxes", "id": 344, "products": [1], "values": [344, 348]}, {"name": "Slander", "id": 358, "parent_id": 400, "products": [1], "values": [358, 359, 360, 361]}, {"name": "Constitutional or Civil Rights Violation", "id": 17, "products": [1], "values": [17]}, {"name": "Negligent Infliction of Emotional Distress", "id": 105, "parent_id": 473, "products": [1], "values": [105]}, {"name": "Premises Liability", "id": 112, "parent_id": 473, "products": [1], "values": [112]}, {"name": "Products Liability", "id": 114, "products": [1], "children": [{"name": "Design Defect", "id": 225, "parent_id": 114, "products": [1], "values": [225]}], "values": [114, 226, 225, 227]}, {"name": "Quantum Meruit", "id": 120, "products": [1], "values": [120]}, {"name": "Recovery on an Insurance Contract", "id": 380, "parent_id": 479, "products": [1], "values": [380]}, {"name": "Abuse of Process", "id": 386, "values": [1]}, {"name": "Rescission", "id": 131, "products": [1], "values": [131]}, {"name": "Breach of Duty to Defend", "id": 390, "products": [1], "values": [390, 52, 182]}, {"name": "Money Had and Received", "id": 321, "parent_id": 394, "products": [1], "values": [321]}, {"name": "Shareholder Derivative Suit", "id": 905, "products": [1], "values": [905]}, {"name": "Common Count", "id": 394, "children": [{"name": "Goods Sold and Delivered", "id": 175, "parent_id": 394, "products": [1], "values": [175]}, {"name": "Money Due", "id": 320, "parent_id": 394, "products": [1], "values": [320]}, {"name": "Money Had and Received", "id": 321, "parent_id": 394, "products": [1], "values": [321]}, {"name": "Money Lent", "id": 322, "parent_id": 394, "products": [1], "values": [322]}, {"name": "Money Paid", "id": 323, "parent_id": 394, "products": [1], "values": [323]}, {"name": "Open Book Account", "id": 500, "parent_id": 394, "products": [1], "values": [500]}, {"name": "Account Stated", "id": 539, "parent_id": 394, "products": [1], "values": [539]}], "values": [539, 19, 175, 320, 321, 322, 323, 500]}, {"name": "Specific Performance", "id": 139, "parent_id": 479, "products": [1], "values": [139]}, {"name": "Strict Liability", "id": 140, "products": [1], "values": [140]}, {"name": "Conversion", "id": 398, "values": [25, 605]}, {"name": "Defamation", "id": 400, "children": [{"name": "Libel", "id": 297, "parent_id": 400, "products": [1], "values": [297, 298, 299, 372]}, {"name": "Slander", "id": 358, "parent_id": 400, "products": [1], "values": [358, 359, 360, 361]}], "values": [20, 30, 222, 223, 297, 298, 299, 372, 358, 359, 360, 361]}, {"name": "Money Paid", "id": 323, "parent_id": 394, "products": [1], "values": [323]}, {"name": "Discrimination", "id": 404, "values": [36, 451, 452, 235, 664, 233, 369]}, {"name": "Failure to Provide Meal or Rest Periods", "id": 431, "parent_id": 483, "products": [1], "values": [431]}, {"name": "Eminent Domain", "id": 410, "children": [{"name": "Condemnation", "id": 21, "parent_id": 410, "products": [1], "values": [21, 599]}], "values": [21, 599, 43]}, {"name": "Failure to Pay Overtime Wages", "id": 155, "parent_id": 469, "products": [1], "values": [155, 428]}, {"name": "Failure to Provide Reasonable Accommodation", "id": 412, "values": [51, 763]}, {"name": "Enforcement of Order of Judgment", "id": 413, "products": [1], "values": [413]}, {"name": "Willful Misconduct", "id": 160, "products": [1], "values": [160]}, {"name": "Wrongful Eviction", "id": 163, "products": [1], "values": [163]}, {"name": "Fraud", "id": 423, "preferred": 0, "children": [{"name": "False Promise", "id": 72, "parent_id": 423, "products": [1], "values": [72]}, {"name": "Fraudulent Inducement", "id": 76, "parent_id": 423, "products": [1], "values": [76]}, {"name": "Concealment", "id": 205, "parent_id": 423, "products": [1], "values": [205, 400]}, {"name": "Deceit", "id": 219, "parent_id": 423, "products": [1], "values": [219]}, {"name": "False Representation", "id": 265, "parent_id": 423, "products": [1], "values": [265]}, {"name": "Constructive Fraud", "id": 270, "parent_id": 423, "products": [1], "values": [270]}, {"name": "Misrepresentation", "id": 313, "parent_id": 423, "products": [1], "values": [313, 314, 315, 316, 317, 319]}], "values": [205, 400, 219, 72, 265, 75, 270, 271, 272, 787, 788, 789, 76, 790, 174, 269, 313, 314, 315, 316, 317, 319, 106, 143]}, {"name": "Fraudulent Transfer", "id": 424, "values": [268, 77]}, {"name": "Unpaid Rent", "id": 156, "products": [1], "values": [156]}, {"name": "Breach of Covenant", "id": 199, "values": [199, 555], "parent_id": 479, "products": [1], "children": [{"name": "Breach of Covenant of Good Faith and Fair Dealing", "id": 555, "parent_id": 199, "products": [1], "values": [555]}]}, {"name": "Invasion of Privacy", "id": 430, "values": [403, 377, 94, 310, 828, 831, 339, 898]}, {"name": "Goods Sold and Delivered", "id": 175, "parent_id": 394, "products": [1], "values": [175]}, {"name": "Negligent Construction", "id": 328, "parent_id": 473, "products": [1], "values": [328]}, {"name": "Malicious Prosecution", "id": 434, "values": [99]}, {"name": "Misappropriation", "id": 436, "children": [{"name": "Misappropriation of Likeness", "id": 310, "parent_id": 436, "products": [1], "values": [310]}, {"name": "Misappropriation of Trade Secrets", "id": 311, "parent_id": 436, "products": [1], "values": [311]}], "values": [102, 309, 310, 826, 827, 828, 829, 830, 831, 311]}, {"name": "Breach of Warranty", "id": 437, "parent_id": 479, "products": [1], "values": [437, 564]}, {"name": "Nuisance", "id": 439, "values": [386, 387, 388, 303, 107, 840, 841]}, {"name": "Retaliation", "id": 449, "values": [135, 511, 891, 892, 352, 893, 353, 354, 894, 355, 234, 370]}, {"name": "Theft", "id": 453, "values": [144]}, {"name": "Trespass", "id": 454, "values": [146, 375, 374, 924]}, {"name": "Unfair Competition or Business Practices", "id": 455, "children": [{"name": "False Advertising", "id": 69, "parent_id": 455, "products": [1], "values": [69]}], "values": [204, 69, 81, 150]}, {"name": "Unjust Enrichment", "id": 456, "values": [151]}, {"name": "Unlawful Detainer", "id": 457, "values": [152]}, {"name": "Concealment", "id": 205, "parent_id": 423, "products": [1], "values": [205, 400]}, {"name": "Usury", "id": 461, "values": [158]}, {"name": "Wrongful Discharge", "id": 464, "values": [232, 231, 233, 234, 367, 368, 369, 370, 371, 162, 166]}, {"name": "Breach of Fiduciary Duty", "id": 468, "values": [202]}, {"name": "Failure to Pay Wages", "id": 469, "children": [{"name": "Failure to Pay Overtime Wages", "id": 155, "parent_id": 469, "products": [1], "values": [155, 428]}, {"name": "Failure to Pay Minimum Wages", "id": 747, "parent_id": 469, "products": [1], "values": [747]}, {"name": "Failure to Pay Wages Upon Termination", "id": 753, "parent_id": 469, "products": [1], "values": [753]}], "values": [56, 747, 428, 260, 753, 155, 157]}, {"name": "Infliction of Emotional Distress", "id": 470, "values": [672, 384, 80, 279, 105]}, {"name": "Inverse Condemnation", "id": 471, "values": [456, 206]}, {"name": "Loss of Consortium", "id": 472, "values": [96]}, {"name": "Negligence and Personal Injuries", "id": 473, "preferred": 1, "children": [{"name": "Dangerous Condition", "id": 28, "parent_id": 473, "products": [1], "values": [28, 615]}, {"name": "Failure to Supervise", "id": 65, "parent_id": 473, "products": [1], "values": [65]}, {"name": "Failure to Warn", "id": 67, "parent_id": 473, "products": [1], "values": [67]}, {"name": "Negligent Infliction of Emotional Distress", "id": 105, "parent_id": 473, "products": [1], "values": [105]}, {"name": "Premises Liability", "id": 112, "parent_id": 473, "products": [1], "values": [112]}, {"name": "Breach of Duty of Care", "id": 201, "parent_id": 473, "products": [1], "values": [201]}, {"name": "Malpractice", "id": 304, "values": [304, 305, 306, 307, 308, 487, 325, 327], "parent_id": 473, "products": [1], "children": [{"name": "Legal Malpractice", "id": 307, "parent_id": 304, "products": [1], "values": [307]}, {"name": "Medical Malpractice", "id": 308, "parent_id": 304, "products": [1], "values": [306, 308, 487, 325]}]}, {"name": "Gross Negligence", "id": 324, "parent_id": 473, "products": [1], "values": [324]}, {"name": "Negligent Construction", "id": 328, "parent_id": 473, "products": [1], "values": [328]}, {"name": "Negligent Design", "id": 329, "parent_id": 473, "products": [1], "values": [329]}, {"name": "Negligent Hiring", "id": 332, "parent_id": 473, "products": [1], "values": [332]}, {"name": "Negligent Maintenance", "id": 333, "parent_id": 473, "products": [1], "values": [333]}, {"name": "Negligent Supervision", "id": 335, "parent_id": 473, "products": [1], "values": [335]}, {"name": "Negligent Training", "id": 337, "parent_id": 473, "products": [1], "values": [337]}], "values": [201, 399, 604, 28, 615, 34, 417, 65, 67, 304, 305, 306, 307, 308, 487, 318, 104, 324, 325, 326, 327, 489, 490, 328, 491, 329, 492, 493, 330, 331, 494, 332, 333, 495, 838, 839, 496, 497, 498, 334, 499, 335, 336, 337, 105, 385, 112, 161]}, {"name": "Deceit", "id": 219, "parent_id": 423, "products": [1], "values": [219]}, {"name": "Dependent Adult or Elder Abuse", "id": 476, "values": [634, 42, 239, 240, 241]}, {"name": "False Arrest or Imprisonment", "id": 477, "values": [70, 71]}, {"name": "Interference with Business or Contracts", "id": 478, "values": [292, 293]}, {"name": "Contract-Related Action", "id": 479, "products": [1], "children": [{"name": "Failure to Perform", "id": 57, "parent_id": 479, "products": [1], "values": [57]}, {"name": "Specific Performance", "id": 139, "parent_id": 479, "products": [1], "values": [139]}, {"name": "Breach of Covenant", "id": 199, "values": [199, 555], "parent_id": 479, "products": [1], "children": [{"name": "Breach of Covenant of Good Faith and Fair Dealing", "id": 555, "parent_id": 199, "products": [1], "values": [555]}]}, {"name": "Enforcement of Contract", "id": 243, "parent_id": 479, "products": [1], "values": [243]}, {"name": "Failure to Pay on Contract", "id": 427, "parent_id": 479, "products": [1], "values": [427]}, {"name": "Breach of Warranty", "id": 437, "parent_id": 479, "products": [1], "values": [437, 564]}, {"name": "Breach of Contract", "id": 552, "parent_id": 479, "products": [1], "values": [198, 552, 378]}, {"name": "Breach of Trust", "id": 563, "parent_id": 479, "products": [1], "values": [563, 436]}, {"name": "Recovery on an Insurance Contract", "id": 380, "parent_id": 479, "products": [1], "values": [380]}], "values": [198, 199, 555, 139, 437, 564, 342, 347, 203, 378, 57, 563, 436, 196, 552, 243, 427, 602, 380, 246, 471]}, {"name": "Construction Defect", "id": 224, "products": [1], "values": [224]}, {"name": "Design Defect", "id": 225, "parent_id": 114, "products": [1], "values": [225]}, {"name": "Wrongful Foreclosure", "id": 482, "products": [1], "values": [164]}, {"name": "Wage and Hour", "id": 483, "products": [1], "children": [{"name": "Failure to Provide Meal or Rest Periods", "id": 431, "parent_id": 483, "products": [1], "values": [431]}], "values": [605, 649, 664, 738, 56, 747, 428, 260, 753, 431, 261, 432, 794, 88, 824, 832, 345, 934, 155, 157, 940, 944, 442]}, {"name": "Failure to Pay Minimum Wages", "id": 747, "parent_id": 469, "products": [1], "values": [747]}, {"name": "Dissolution of Business", "id": 237, "products": [1], "values": [237]}, {"name": "Failure to Pay Wages Upon Termination", "id": 753, "parent_id": 469, "products": [1], "values": [753]}, {"name": "Enforcement of Contract", "id": 243, "parent_id": 479, "products": [1], "values": [243]}, {"name": "Open Book Account", "id": 500, "parent_id": 394, "products": [1], "values": [500]}, {"name": "Harassment", "id": 425, "values": [79, 274, 475, 275, 476, 793, 284]}, {"name": "Negligent Hiring", "id": 332, "parent_id": 473, "products": [1], "values": [332]}, {"name": "Establish Trust", "id": 252, "products": [1], "values": [252]}], "enableDemoButton": true, "postureFilters": [{"name": "Anti-SLAPP Motion", "id": 66, "values": [0]}, {"name": "Attorney Fees and Costs", "id": 67, "values": [9]}, {"name": "Declaratory Judgment", "id": 68, "values": [2]}, {"name": "Demurrer", "id": 69, "preferred": 1, "values": [3]}, {"name": "Motion for Judgment Notwithstanding the Verdict", "id": 70, "products": [1], "values": [5]}, {"name": "Motion for Change of Venue", "id": 72, "values": [11]}, {"name": "Motion for Class Certification", "id": 73, "values": [12]}, {"name": "Motion for Continuance", "id": 74, "products": [1], "values": [61]}, {"name": "Motion for Directed Verdict", "id": 75, "products": [1], "values": [62]}, {"name": "Motion for Judgment on the Pleadings", "id": 76, "values": [25]}, {"name": "Motion for Nonsuit", "id": 77, "products": [1], "values": [23]}, {"name": "Motion for Sanctions", "id": 78, "products": [1], "values": [27]}, {"name": "Motion for Summary Judgment or Adjudication", "id": 79, "preferred": 0, "values": [60, 30]}, {"name": "Motion for New Trial", "id": 80, "products": [1], "values": [22]}, {"name": "Motion to Amend Pleading", "id": 81, "values": [24]}, {"name": "Motion to Dismiss", "id": 85, "products": [1], "values": [16]}, {"name": "Motion to Disqualify Counsel", "id": 86, "values": [18]}, {"name": "Motion to Disqualify Judge", "id": 87, "products": [1], "values": [19]}, {"name": "Motion to Dissolve the Writ of Attachment", "id": 88, "values": [47]}, {"name": "Motion to Intervene", "id": 89, "products": [1], "values": [20]}, {"name": "Motion to Introduce or Exclude Evidence", "id": 90, "values": [58, 63, 48]}, {"name": "Motion to Quash", "id": 91, "products": [1], "values": [26]}, {"name": "Motion to Stay or Dismiss for Inconvenient Forum", "id": 92, "products": [1], "values": [28]}, {"name": "Motion to Strike", "id": 93, "products": [1], "values": [29]}, {"name": "Motion to Vacate Judgment", "id": 95, "products": [1], "values": [34]}, {"name": "Petition for Writ of Mandate", "id": 96, "products": [1], "values": [37]}, {"name": "Petition to Compel Arbitration", "id": 100, "products": [1], "values": [6]}, {"name": "Petition to Confirm Arbitration Award", "id": 101, "products": [1], "values": [36]}, {"name": "Petition to Correct Arbitration Award", "id": 102, "products": [1], "values": [65]}, {"name": "Motion to Dismiss Appeal", "id": 17, "products": [1], "values": [17]}, {"name": "Trial Judgment", "id": 42, "products": [1], "values": [42]}, {"name": "Petition to Vacate Contractual Arbitration Award", "id": 103, "products": [1], "values": [7]}], "appRoot": "/demo/clerk", "tcpNames": {"0": "UNKNOWN", "1": "INITIATING_PROCEEDINGS", "2": "RESPONDING_TO_PROCEEDINGS", "3": "INTERVENING", "4": "OPPOSING_INTERVENTION"}, "showDebug": false, "appellateRoleNames": {"0": "APPELLANT", "1": "RESPONDENT"}, "courtNames": [[0, "Superior Court"], [1, "Court of Appeal"], [2, "Supreme Court"]], "demoPath": "data/brief/1.json"};
+            window.config.rootUrl = "/";
+            window.config.suggestTypeaheadUrl = "/ajax/typeahead/suggest";
+            
+            window.config.csrfCookieName = "csrftoken2";
+            
+            window.config.user = {
+                subscriptionState: ""
+            };
+            
+            window.config.overlayDemo = false;
+            
+            window.data = {};
+            window.easing = {name: "easeOutSine", css: "ease-in-out"};
+        </script>
+        <!-- Google Analytics -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+          Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', {
+          trackingId: 'UA-30787050-1',
+          siteSpeedSampleRate: 100,
+          
+          cookieDomain: 'auto'});
+          ga('send', 'pageview');
+        </script>
+        <!-- End Google Analytics -->
+        <!-- start Mixpanel -->
+        <script type="text/javascript">
+        (function(e,b){ if(!b.__SV){
+            var a,f,i,g;
+            window.mixpanel=b;
+            b._i=[];
+            b.init=function(a,e,d){
+                function f(b,h){
+                    var a=h.split(".");
+                    2==a.length&&(b=b[a[0]],h=a[1]);
+                    b[h]=function(){
+                        b.push([h].concat(Array.prototype.slice.call(arguments,0)))
+                        }
+                }
+                var c=b;
+                "undefined"!==typeof d?c=b[d]=[]:d="mixpanel";
+                c.people=c.people||[];
+                c.toString=function(b){
+                    var a="mixpanel";
+                    "mixpanel"!==d&&(a+="."+d);
+                    b||(a+=" (stub)");return a
+                };
+                c.people.toString=function(){
+                    return c.toString(1)+".people (stub)"
+                };
+                i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+                for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};
+                b.__SV=1.2;a=e.createElement("script");
+                a.type="text/javascript";
+                a.async=!0;
+                a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+                f=e.getElementsByTagName("script")[0];
+                f.parentNode.insertBefore(a,f)
+            }
+        })(document,window.mixpanel||[]);
+
+        
+        mixpanel.init("b84167e7047c08fecb293f0068e73275");
+
+        
+            // Explicitly add the ignore tag.  If we don't do this, we will
+            // still get un-logged in hits.
+            mixpanel.register({"$ignore": true});
+        
+
+        </script><!-- end Mixpanel -->
+
+        
+        <script async defer type="text/javascript" src="../static/d3aeb189313a461a0f6a182b783a20b1b9db2c42/js/libs/require.js" data-main="mains/brief/clerk.js"></script>
+        
+        
+    </head>
+
+    <body id="page-brief-clerk-demo">
+        <div id="page">
+            <div id="header">
+              
+                <a href="../index.html">
+                    <div id="logo"></div>
+                </a>
+
+                <div id="search-bar">
+                    
+                        <form method="get" id="search"
+                              action="../login_next=_search_case.html">
+                            <div id="search-field-container">
+                              <input id="search-field" type='text' name="q" autocomplete="off" value="" />
+                            </div>
+                            <input type='submit' value="Search">
+                        </form>
+                    
+                    
+                </div>
+
+                <div id="gear">
+                </div>
+                <div id="gear-menu" class="hidden">
+                    <ul>
+                        
+                        <li><a href='../login.html'>Log in</a></li>
+                        
+                    </ul>
+                </div>
+
+                <div class="clearfix"></div>
+
+                
+                
+            </div>
+
+            
+
+            
+<div>
+  <div class="spinner-container">
+    <div class="spinner"></div>
+  </div>
+  <div class="brief-upload-container hidden">
+    <div class="brief-upload-intro">
+      <h2>Try Judicata Clerk</h2>
+      <p>
+        
+        Win more motions with Clerk. Lawyers can now uncover intelligent
+        insights to help them attack or improve a brief.
+        
+      </p>
+
+      <img src="../static/d3aeb189313a461a0f6a182b783a20b1b9db2c42/img/clerk-report.png" class="clerk-screenshot" />
+
+      <p>
+        
+        <a href="https://blog.judicata.com/introducing-clerk-848abbed8fd3">
+          Learn more about Clerk
+        </a>
+        
+      </p>
+    </div>
+
+    
+    <div class="brief-upload-form">
+      <div id="brief-upload-form-container">
+        
+        <a
+           id="request-demo-button"
+           class="call-to-action"
+           href="../request-clerk-demo.html"
+           >
+          Request a demo and free trial
+        </a>
+        
+      </div>
+      
+    </div>
+
+    <div class="brief-set-metadata"></div>
+
+    <div id="error-modal" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+            <h4 class="modal-title">
+              There was an error uploading your brief.
+            </h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button class="call-to-action" data-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="brief-report-container"></div>
+</div>
+
+
+            <div id="footer">
+                <span>Judicata &copy; 2020</span>
+                <span class="site-links">
+                    <span>
+                        <a href="https://blog.judicata.com">Blog</a>
+                    </span>
+                    &middot;
+                    <span>
+                        <a href="../terms.html">Terms</a>
+                    </span>
+                    &middot;
+                    <span>
+                        <a href="../privacy.html">Privacy</a>
+                    </span>
+                    
+                </span>
+            </div>
+        </div>
+
+        
+    </body>
+</html>
