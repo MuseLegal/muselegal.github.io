@@ -1,0 +1,14 @@
+# See https://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
+User-agent: *
+Disallow: */search
+Disallow: /ahoy/
+Disallow: /contact_forms
+Disallow: /settings/*
+Disallow: /internal/*
+Disallow: /settings/notifications
+Disallow: /settings/account
+Disallow: /users
+Disallow: /users/password
+Disallow: /users/sign_up
+Disallow: /users/sign_in
+Disallow: /users/sign_out

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <script rel="preload" src="https://config.metomic.io/config.js?id=prj:0e586734-bf4a-4ac5-91eb-48f25cccc289" crossorigin charset="utf-8"></script>
+    <script rel="preload" src="https://consent-manager.metomic.io/embed.js" crossorigin charset="utf-8"></script>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160736097-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-160736097-1');
+      </script>
+
+      <!-- Fullstory Tracking Code -->
+      <script>
+        window['_fs_debug'] = false;
+        window['_fs_host'] = 'fullstory.com';
+        window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
+        window['_fs_org'] = 'SQVTV';
+        window['_fs_namespace'] = 'FS';
+        (function(m,n,e,t,l,o,g,y){
+            if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+            g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+            o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_script;
+            y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+            g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+            g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+            g.log = function(a,b){g("log",[a,b])};
+            g.consent=function(a){g("consent",!arguments.length||a)};
+            g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+            g.clearUserCookie=function(){};
+            g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];
+            if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
+            g._v="1.1.1";
+        })(window,document,window['_fs_namespace'],'script','user');
+      </script>
+
+    <title>Crowdheavy - User Testing Platform</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Malachai Frazier">
+    <meta name="keywords" content="remote testing,user testing,ux,ui, work from home,design surveying, usability, crowdheavy,usability tests,tests icon,usertesting com, websites feedback, benchmarking websites">
+<meta name="description" content="Crowdheavy is a remote user testing and usability platform. Watch videos of real people interacting with your website 🧐"/>
+
+<!-- Open Graph tags for Social Media-->
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://www.crowdheavy.com" />
+<meta property="og:image" content="https://crowdheavy-prod.s3.amazonaws.com/linkedin_profile_image.png" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Crowdheavy" />
+<meta property="og:description" content="Crowdheavy is a remote user testing and usability platform. Watch videos of real people interacting with your website 🧐" />
+<!-- <meta property="og:pubdate" content="" /> -->
+<meta property="og:site_name" content="Crowdheavy" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://twitter.com/getcrowdheavy" />
+<meta name="twitter:image" content="https://crowdheavy-prod.s3.amazonaws.com/linkedin_profile_image.png" />
+<meta name="twitter:site" content="@getcrowdheavy" />
+<meta name="twitter:creator" content="@NerdCodeDad">
+<meta name="twitter:title" content="Remote User Testing | Crowdheavy" />
+<meta name="twitter:description" content="Crowdheavy is a remote user testing and usability platform. Watch videos of real people interacting with your website 🧐" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon-2637418395ec744f513dcd7b227a67bcfb7d80f337a9ecafb2a73379761f5160.png" />
+    <link rel="apple-touch-icon" type="image/png" href="assets/favicon-2637418395ec744f513dcd7b227a67bcfb7d80f337a9ecafb2a73379761f5160.png" />
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="4snrvPfNGIo9F7Qpl8sXCJfH4HAJWmXq03KX9T8ZdtYnEkKEGIrB9CS1Xiw3oVMSG7gtFa0U51AWR4TphgsgDA==" />
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,,500,600,700" rel="stylesheet">
+    <script rel="preload" src="https://kit.fontawesome.com/34d1bcaa51.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" media="all" href="assets/application-5e4ff8bff9bce7523da512af49769dfc05551e7defe6f4f0e20ef95b34ddc6e6.css" data-turbolinks-track="reload" />
+    <link rel="stylesheet" media="all" href="packs/css/application-8bad7474.css" data-turbolinks-track="reload" />
+    <script src="packs/js/application-598a3a66ba6d846d03ce.js" data-turbolinks-track="reload"></script>
+    <!-- <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/44f90383606488dc1c41710b0/6b89e0e96c873e3322e1a00ae.js");</script> -->
+
+
+    <!-- Start of async Talkative code -->
+      <!-- <script>
+      !(function() {
+        (o = document.createElement("script")),
+          (o.type = "text/javascript"),
+          (o.id = "talkativeSdkScipt"),
+          (o.crossorigin = "anonymous"),
+          (o.src = "https://meettalkative.com/resources/talkative.min.js"),
+          (n = document.getElementsByTagName("script")[0]),
+          n.parentNode.insertBefore(o, n);
+      })();
+      talkativeSdkScipt.addEventListener("load", function() {
+        talkative.load("ymyeIn65k");
+      });
+      </script> -->
+    <!-- End of async Talkative code -->
+  </head>
+
+  <body id="page-top" class="is-preload d-flex flex-column h-100">
+      <header class="head-main">
+  <div class="navbar navbar-dark bg-dark box-shadow">
+    <div class="container d-flex">
+      <a class="navbar-brand" href="index.html">
+      </a>
+
+      <a class="d-none d-sm-block" href="product.html">Product</a>
+      <a class="ml-3 d-none d-sm-block" href="pricing.html">Pricing</a>
+      <a class="ml-3 d-none d-sm-block" href="tester_faqs.html">Tester FAQs</a>
+      <a class="ml-3 d-none d-sm-block" href="testers.html">Become a tester</a>
+
+        <a class="ml-auto mr-2 d-none d-sm-block" href="https://www.crowdheavy.com/users/sign_in">Log In</a>
+        <a class="btn btn-outline-primary mr-2 d-none d-sm-block" href="https://www.crowdheavy.com/users/sign_up?plan=flexible">Sign Up</a>
+
+      <a class="nav-button  d-lg-none d-md-none">
+        <span id="nav-icon3"><span>
+        </span><span></span><span></span><span></span></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="fixed-top main-menu">
+    <div class="flex-center p-1">
+      <ul class="nav flex-column">
+        <li class="nav-item ">
+          <a class="nav-link" href="product.html">
+            Product
+</a>        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="pricing.html">
+            Pricing
+</a>        </li>
+
+        <li class="nav-item ">
+          <a class="nav-link" href="tester_faqs.html">Tester FAQs</a>
+        </li>
+
+        <li class="nav-item ">
+          <a class="nav-link" href="testers.html">
+            Become a tester
+</a>        </li>
+
+          <li class='nav-item mx-1'>
+            <a class="nav-link btn btn-primary my-2" href="https://www.crowdheavy.com/users/sign_up?plan=flexible">Start Free</a>
+          </li>
+
+          <li class='nav-item mx-1'>
+            <a class="nav-link btn btn-outline-info my-2" href="https://www.crowdheavy.com/users/sign_in">Sign In</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+
+    <div class="container"> <!-- mt-2"> -->
+  <div id="flash-messages" class="row-fluid">
+  </div>
+</div>
+    <div class="container">
+  <div class="row">
+    <div class="col mx-auto my-4 devise-card ">
+      
+
+      <div class="row">
+        <div class="col-auto">
+          <h1>🖥️ Apply to earn $5 per test</h1>
+          <p class="lead">
+            Questions? Get answers from the
+             <a href="tester_faqs.html">Tester FAQs</a> before applying.
+          </p>
+        </div>
+
+        <div class="col-12 mb-2">
+          <hr/>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="">
+          <form class="simple_form new_user" id="new_user" role="form" novalidate="novalidate" action="testers.html" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="yXNvNG9GqHCmPXs/zTRt7fvEVi45bQ/fvkzLV6isBcDVU1dRxZHAgv9PpxP5TnvNWzX+lyutvkrqCMNqHGwA7Q==" />
+            
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group string required user_first_name"><label class="string required" for="user_first_name">First name <abbr title="required">*</abbr></label><input class="form-control string required" required="required" aria-required="true" type="text" value="" name="user[first_name]" id="user_first_name" /></div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group string required user_last_name"><label class="string required" for="user_last_name">Last name <abbr title="required">*</abbr></label><input class="form-control string required" required="required" aria-required="true" type="text" value="" name="user[last_name]" id="user_last_name" /></div>
+              </div>
+            </div>
+
+            <div class="form-group required">
+              <div class="form-group email required user_email"><label class="email required" for="user_email">Email <abbr title="required">*</abbr></label><input class="form-control string email required " autocomplete="email" autofocus="autofocus" required="required" aria-required="true" type="email" value="" name="user[email]" id="user_email" /></div>
+            </div>
+
+            <div class="form-group required">
+              <div class="form-group password required user_password"><label class="password required" for="user_password">Password <abbr title="required">*</abbr></label><input class="form-control password required" autocomplete="new-password" required="required" aria-required="true" type="password" name="user[password]" id="user_password" /><small class="form-text text-muted">6 characters minimum</small></div>
+            </div>
+
+            <div class="form-group required">
+              <div class="form-group password required user_password_confirmation"><label class="password required" for="user_password_confirmation">Password confirmation <abbr title="required">*</abbr></label><input class="form-control password required" autocomplete="new-password" required="required" aria-required="true" type="password" name="user[password_confirmation]" id="user_password_confirmation" /></div>
+            </div>
+
+            <div class="row my-4">
+              <div class="col-12">
+                <h2>
+                  🧑🏾‍🤝‍🧑🏼 Your Demographic Profile
+                  <small class='red-color'>&#42;All fields are required</small>
+                </h2>
+                <p class="lead">
+                  There are cases where tests must be completed by people with a particular demographic profile.
+                  We use your info for matching your profile with the appropriate tests.
+                  We do not share this info with anyone. Period.
+                </p>
+              </div>
+            </div>
+
+            <div id='tester-profile-section'>
+              
+                <div class="row mb-2">
+                  <div class="col-sm-6 required">
+                    <div class="form-group date required user_tester_profile_date_of_birth"><label class="date required" for="user_tester_profile_date_of_birth">Date of birth <abbr title="required">*</abbr></label><div class="d-flex flex-row justify-content-between align-items-center"><input class="form-control mx-1 date required" type="date" name="user[tester_profile][date_of_birth]" id="user_tester_profile_date_of_birth" /></div></div>
+                  </div>
+
+                  <div class="col-sm-6 required">
+                    <div class="form-group string required user_tester_profile_cash_tag"><label class="string required" for="user_tester_profile_cash_tag">Cash tag <abbr title="required">*</abbr></label><input class="form-control string required form-control form-control-lg" placeholder="$YourCashTag" type="text" name="user[tester_profile][cash_tag]" id="user_tester_profile_cash_tag" /><small class="form-text text-muted">We use Cash App for payouts</small></div>
+                  </div>
+                </div>
+
+                <div class="row mb-2">
+                  <div class="col-sm-4 required">
+                    <fieldset class="form-group radio_buttons required user_tester_profile_native_language"><legend class="col-form-label pt-0">Native language <abbr title="required">*</abbr></legend><input type="hidden" name="user[tester_profile][native_language]" value="" /><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="english" name="user[tester_profile][native_language]" id="user_tester_profile_native_language_english" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_native_language_english">English</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="german" name="user[tester_profile][native_language]" id="user_tester_profile_native_language_german" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_native_language_german">German</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="spanish" name="user[tester_profile][native_language]" id="user_tester_profile_native_language_spanish" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_native_language_spanish">Spanish</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="arabic" name="user[tester_profile][native_language]" id="user_tester_profile_native_language_arabic" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_native_language_arabic">Arabic</label></div></fieldset>
+                  </div>
+
+                  <div class="col-sm-4 required">
+                    <fieldset class="form-group radio_buttons required user_tester_profile_country_of_residence"><legend class="col-form-label pt-0">Country <abbr title="required">*</abbr></legend><input type="hidden" name="user[tester_profile][country_of_residence]" value="" /><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="united_states" name="user[tester_profile][country_of_residence]" id="user_tester_profile_country_of_residence_united_states" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_country_of_residence_united_states">United States</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="germany" name="user[tester_profile][country_of_residence]" id="user_tester_profile_country_of_residence_germany" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_country_of_residence_germany">Germany</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="mexico" name="user[tester_profile][country_of_residence]" id="user_tester_profile_country_of_residence_mexico" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_country_of_residence_mexico">Mexico</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="canada" name="user[tester_profile][country_of_residence]" id="user_tester_profile_country_of_residence_canada" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_country_of_residence_canada">Canada</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="united_kingdom" name="user[tester_profile][country_of_residence]" id="user_tester_profile_country_of_residence_united_kingdom" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_country_of_residence_united_kingdom">United Kingdom</label></div></fieldset>
+                  </div>
+
+                  <div class="col-sm-4 required">
+                    <fieldset class="form-group radio_buttons required user_tester_profile_gender"><legend class="col-form-label pt-0">Gender <abbr title="required">*</abbr></legend><input type="hidden" name="user[tester_profile][gender]" value="" /><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="male" name="user[tester_profile][gender]" id="user_tester_profile_gender_male" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_gender_male">Male</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="female" name="user[tester_profile][gender]" id="user_tester_profile_gender_female" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_gender_female">Female</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="no_answer" name="user[tester_profile][gender]" id="user_tester_profile_gender_no_answer" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_gender_no_answer">No Answer</label></div></fieldset>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col mb-2">
+                    <hr/>
+                  </div>
+                </div>
+
+                <div class="row mb-2">
+                  <div class="col-sm-4 required">
+                    <fieldset class="form-group radio_buttons required user_tester_profile_children"><legend class="col-form-label pt-0">Children <abbr title="required">*</abbr></legend><input type="hidden" name="user[tester_profile][children]" value="" /><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="with_children" name="user[tester_profile][children]" id="user_tester_profile_children_with_children" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_children_with_children">With Children</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="without_children" name="user[tester_profile][children]" id="user_tester_profile_children_without_children" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_children_without_children">Without Children</label></div></fieldset>
+                  </div>
+
+                  <div class="col-sm-4 required">
+                    <fieldset class="form-group radio_buttons required user_tester_profile_marital_status"><legend class="col-form-label pt-0">Marital status <abbr title="required">*</abbr></legend><input type="hidden" name="user[tester_profile][marital_status]" value="" /><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="in_a_relationship" name="user[tester_profile][marital_status]" id="user_tester_profile_marital_status_in_a_relationship" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_marital_status_in_a_relationship">In A Relationship</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="married" name="user[tester_profile][marital_status]" id="user_tester_profile_marital_status_married" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_marital_status_married">Married</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="single" name="user[tester_profile][marital_status]" id="user_tester_profile_marital_status_single" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_marital_status_single">Single</label></div></fieldset>
+                  </div>
+
+                  <div class="col-sm-4">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col mb-2">
+                    <hr/>
+                  </div>
+                </div>
+
+                <div class="row mb-2">
+                  <div class="col-sm-4 required">
+                    <fieldset class="form-group radio_buttons required user_tester_profile_education_level"><legend class="col-form-label pt-0">Education level <abbr title="required">*</abbr></legend><input type="hidden" name="user[tester_profile][education_level]" value="" /><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="GED/High School" name="user[tester_profile][education_level]" id="user_tester_profile_education_level_gedhigh_school" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_education_level_gedhigh_school">GED/High School</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="Some College" name="user[tester_profile][education_level]" id="user_tester_profile_education_level_some_college" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_education_level_some_college">Some College</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="Associate&#39;s Degree" name="user[tester_profile][education_level]" id="user_tester_profile_education_level_associates_degree" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_education_level_associates_degree">Associate&#39;s Degree</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="Bachelor&#39;s Degree" name="user[tester_profile][education_level]" id="user_tester_profile_education_level_bachelors_degree" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_education_level_bachelors_degree">Bachelor&#39;s Degree</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="Master&#39;s Degree" name="user[tester_profile][education_level]" id="user_tester_profile_education_level_masters_degree" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_education_level_masters_degree">Master&#39;s Degree</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="Ph.D. or higher" name="user[tester_profile][education_level]" id="user_tester_profile_education_level_ph_d__or_higher" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_education_level_ph_d__or_higher">Ph.D. or higher</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="Trade or Technical School" name="user[tester_profile][education_level]" id="user_tester_profile_education_level_trade_or_technical_school" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_education_level_trade_or_technical_school">Trade or Technical School</label></div></fieldset>
+                  </div>
+
+                  <div class="col-sm-4 required">
+                    <fieldset class="form-group radio_buttons required user_tester_profile_employment_status"><legend class="col-form-label pt-0">Employment status <abbr title="required">*</abbr></legend><input type="hidden" name="user[tester_profile][employment_status]" value="" /><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="Part-time Employed" name="user[tester_profile][employment_status]" id="user_tester_profile_employment_status_part-time_employed" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_employment_status_part-time_employed">Part-time Employed</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="Full-time Employed" name="user[tester_profile][employment_status]" id="user_tester_profile_employment_status_full-time_employed" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_employment_status_full-time_employed">Full-time Employed</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="Full-time Student" name="user[tester_profile][employment_status]" id="user_tester_profile_employment_status_full-time_student" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_employment_status_full-time_student">Full-time Student</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="Unemployed - Seeking Employment" name="user[tester_profile][employment_status]" id="user_tester_profile_employment_status_unemployed_-_seeking_employment" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_employment_status_unemployed_-_seeking_employment">Unemployed - Seeking Employment</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="Unemployed - Not Seeking Employment" name="user[tester_profile][employment_status]" id="user_tester_profile_employment_status_unemployed_-_not_seeking_employment" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_employment_status_unemployed_-_not_seeking_employment">Unemployed - Not Seeking Employment</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="Self Employed" name="user[tester_profile][employment_status]" id="user_tester_profile_employment_status_self_employed" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_employment_status_self_employed">Self Employed</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="Retired" name="user[tester_profile][employment_status]" id="user_tester_profile_employment_status_retired" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_employment_status_retired">Retired</label></div></fieldset>
+                  </div>
+
+                  <div class="col-sm-4">
+                    <fieldset class="form-group radio_buttons required user_tester_profile_household_income"><legend class="col-form-label pt-0">Household income <abbr title="required">*</abbr></legend><input type="hidden" name="user[tester_profile][household_income]" value="" /><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="$0-$24,999" name="user[tester_profile][household_income]" id="user_tester_profile_household_income_0-24999" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_household_income_0-24999">$0-$24,999</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="$25,000-$49,999" name="user[tester_profile][household_income]" id="user_tester_profile_household_income_25000-49999" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_household_income_25000-49999">$25,000-$49,999</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="$50,000-$74,999" name="user[tester_profile][household_income]" id="user_tester_profile_household_income_50000-74999" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_household_income_50000-74999">$50,000-$74,999</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="$75,000-$99,999" name="user[tester_profile][household_income]" id="user_tester_profile_household_income_75000-99999" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_household_income_75000-99999">$75,000-$99,999</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="$100,000-$124,999" name="user[tester_profile][household_income]" id="user_tester_profile_household_income_100000-124999" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_household_income_100000-124999">$100,000-$124,999</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="$124,999 and up" name="user[tester_profile][household_income]" id="user_tester_profile_household_income_124999_and_up" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_household_income_124999_and_up">$124,999 and up</label></div></fieldset>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col mb-2">
+                    <hr/>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-4 required">
+                    <fieldset class="form-group radio_buttons required user_tester_profile_technical_expertise"><legend class="col-form-label pt-0">Technical expertise <abbr title="required">*</abbr></legend><input type="hidden" name="user[tester_profile][technical_expertise]" value="" /><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="casual_user" name="user[tester_profile][technical_expertise]" id="user_tester_profile_technical_expertise_casual_user" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_technical_expertise_casual_user">Casual User</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="power_user" name="user[tester_profile][technical_expertise]" id="user_tester_profile_technical_expertise_power_user" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_technical_expertise_power_user">Power User</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="expert_user" name="user[tester_profile][technical_expertise]" id="user_tester_profile_technical_expertise_expert_user" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_technical_expertise_expert_user">Expert User</label></div></fieldset>
+                  </div>
+
+                  <div class="col-sm-4 required">
+                    <fieldset class="form-group radio_buttons required user_tester_profile_daily_hours_online"><legend class="col-form-label pt-0">Daily hours online <abbr title="required">*</abbr></legend><input type="hidden" name="user[tester_profile][daily_hours_online]" value="" /><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="Under 1 hour" name="user[tester_profile][daily_hours_online]" id="user_tester_profile_daily_hours_online_under_1_hour" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_daily_hours_online_under_1_hour">Under 1 hour</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="1-3 hours" name="user[tester_profile][daily_hours_online]" id="user_tester_profile_daily_hours_online_1-3_hours" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_daily_hours_online_1-3_hours">1-3 hours</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="4-6 hours" name="user[tester_profile][daily_hours_online]" id="user_tester_profile_daily_hours_online_4-6_hours" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_daily_hours_online_4-6_hours">4-6 hours</label></div><div class="form-check"><input class="form-check-input radio_buttons required" type="radio" value="Over 6 hours" name="user[tester_profile][daily_hours_online]" id="user_tester_profile_daily_hours_online_over_6_hours" /><label class="form-check-label collection_radio_buttons" for="user_tester_profile_daily_hours_online_over_6_hours">Over 6 hours</label></div></fieldset>
+                  </div>
+
+                  <div class="col-sm-4 required">
+                    <fieldset class="form-group check_boxes required user_tester_profile_testing_devices"><legend class="col-form-label pt-0">Testing devices <abbr title="required">*</abbr></legend><input type="hidden" name="user[tester_profile][testing_devices][]" value="" /><div class="form-check"><input class="form-check-input check_boxes required" type="checkbox" value="Apple Computer" name="user[tester_profile][testing_devices][]" id="user_tester_profile_testing_devices_apple_computer" /><label class="form-check-label collection_check_boxes" for="user_tester_profile_testing_devices_apple_computer">Apple Computer</label></div><div class="form-check"><input class="form-check-input check_boxes required" type="checkbox" value="Windows Computer" name="user[tester_profile][testing_devices][]" id="user_tester_profile_testing_devices_windows_computer" /><label class="form-check-label collection_check_boxes" for="user_tester_profile_testing_devices_windows_computer">Windows Computer</label></div><div class="form-check"><input class="form-check-input check_boxes required" type="checkbox" value="Android Phone" name="user[tester_profile][testing_devices][]" id="user_tester_profile_testing_devices_android_phone" /><label class="form-check-label collection_check_boxes" for="user_tester_profile_testing_devices_android_phone">Android Phone</label></div><div class="form-check"><input class="form-check-input check_boxes required" type="checkbox" value="iPhone" name="user[tester_profile][testing_devices][]" id="user_tester_profile_testing_devices_iphone" /><label class="form-check-label collection_check_boxes" for="user_tester_profile_testing_devices_iphone">iPhone</label></div><div class="form-check"><input class="form-check-input check_boxes required" type="checkbox" value="Android Tablet" name="user[tester_profile][testing_devices][]" id="user_tester_profile_testing_devices_android_tablet" /><label class="form-check-label collection_check_boxes" for="user_tester_profile_testing_devices_android_tablet">Android Tablet</label></div><div class="form-check"><input class="form-check-input check_boxes required" type="checkbox" value="iPad" name="user[tester_profile][testing_devices][]" id="user_tester_profile_testing_devices_ipad" /><label class="form-check-label collection_check_boxes" for="user_tester_profile_testing_devices_ipad">iPad</label></div></fieldset>
+                  </div>
+                </div>
+
+
+              <div class="row">
+                <div class="col-12">
+                  <hr/>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <input type="submit" name="commit" value="Apply now" class="btn btn btn-primary" id="tester-apply-now-button" disabled="disabled" data-disable-with="Apply now" />
+            </div>
+</form>
+            <a href="https://www.crowdheavy.com/users/sign_in">Log in</a><br />
+
+  <br />
+  <p class="lead">
+    By registering, I agree to the
+    <a href="terms.html">Terms of Use</a> and have read and understood the <a href="privacy.html">Privacy Policy</a>.
+  </p>
+
+  <a href="https://www.crowdheavy.com/users/sign_up">Customer sign up</a><br />
+  <a href="testers.html">Tester sign up</a><br />
+
+  <a href="https://www.crowdheavy.com/users/password/new">Forgot your password?</a><br />
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">input[type="submit"] {
+/*    background: #5cb85c;
+    color: #fff;*/
+    transition: background 600ms;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:disabled {
+    /*background: #555;*/
+    cursor: not-allowed;
+  }
+</style>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+  <div class="container">
+    <div class="row mb-5 mt-3">
+      <div class="col-lg-auto col-sm-12">
+        <div class="ftco-footer-widget mb-1"> <!-- p-4"> -->
+          <a class="navbar-brand" href="index.html">
+            <img alt="CrowdHeavy" width="161" height="200" class="image-fluid" src="assets/logo_transparent-8aa028ad098e5261c2a028da495a8184e1d56c5832353a0a5881577977730425.png" />
+           </a>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="ftco-footer-widget mb-1"> <!-- ml-md-5"> -->
+          <h2 class="ftco-heading-2">Product</h2>
+          <ul class="list-unstyled">
+            <li><a class="py-2 d-block" href="product.html">Overview</a></li>
+            <li>
+              <a class="py-2 d-block" href="pricing.html">Pricing</a>
+            </li>
+            <li>
+              <a class="py-2 d-block" href="https://www.crowdheavy.com/users/sign_up?plan=flexible">Register</a>
+            </li>
+            <li>
+              <a class="py-2 d-block" href="https://www.crowdheavy.com/users/sign_in">Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="ftco-footer-widget mb-1">
+          <h2 class="ftco-heading-2">Company</h2>
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://trello.com/b/UnAJGDwP/crowdheavy-roadmap"
+               class="py-2 d-block" target="_blank">
+                Roadmap
+              </a>
+            </li>
+            <li>
+              <a class="py-2 d-block" href="about.html">About</a>
+            </li>
+            <li>
+              <a class="py-2 d-block" href="contact.html">Contact</a>
+            </li>
+            <li>
+              <span class='py-2 d-block'>Careers</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="ftco-footer-widget mb-1">
+          <h2 class="ftco-heading-2">Legal</h2>
+          <ul class="list-unstyled">
+            <li>
+              <a class="py-2 d-block" href="privacy.html">Privacy Policy</a>
+            </li>
+            <li>
+              <a class="py-2 d-block" href="cookies.html">Cookie Policy</a>
+            <li>
+            <li>
+              <a href="javascript:window.Metomic('ConsentManager:show')" class="py-2 d-block">
+                Manage Cookies
+              </a>
+            <li>
+              <a class="py-2 d-block" href="terms.html">Terms &amp; Conditions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="ftco-footer-widget mb-1">
+          <h2 class="ftco-heading-2">Testers</h2>
+          <ul class="list-unstyled">
+            <li>
+              <a class="py-2 d-block" href="tester_faqs.html">Tester FAQs</a>
+            </li>
+            <li>
+              <a href="https://crowdheavy.freshdesk.com" class="py-2 d-block">
+                Tester Support
+              </a>
+            </li>
+            <li>
+              <a class="py-2 d-block" href="testers.html">Tester Register</a>
+            </li>
+           <li>
+              <a class="py-2 d-block" href="https://www.crowdheavy.com/users/sign_in">Tester Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <ul class="ftco-footer-social list-inline social-buttons mb-0">
+          <li class="list-inline-item">
+            <a href="https://twitter.com/getcrowdheavy" target="_blank" rel='noopener'>
+              <i class="fab fa-twitter fa-lg"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://angel.co/company/crowdheavy" target="_blank" rel='noopener'>
+              <i class="fab fa-angellist fa-lg"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/company/crowdheavy" target="_blank" rel='noopener'>
+              <i class="fab fa-linkedin fa-lg"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="mailto:info@crowdheavy.com">
+              <i class="far fa-envelope fa-lg"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy; 2020
+         All rights reserved | Made with 🥰 in Metro Detroit.
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
+      </svg>
+    </div>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" rel="nofollow" data-method="delete" href="https://www.crowdheavy.com/users/sign_out">
+              👋 Sign Out
+</a>            <!-- <a class="btn btn-primary" href="login.html">Logout</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script>
+      var beamer_config = {
+        product_id : "lggUlBpm20909",
+        button_position : 'bottom-left'
+      };
+    </script>
+    <script rel="preload"
+     type="text/javascript" src="https://app.getbeamer.com/js/beamer-embed.js"
+     defer="defer"></script> -->
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript"
+    id="hs-script-loader" async defer src="https://js.hs-scripts.com/7453471.js"></script>
+    <!-- End of HubSpot Embed Code -->
+
+  </body>
+</html>
