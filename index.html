@@ -9,7 +9,7 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #f9f9f9;
+      background: #fff;
       color: #111;
     }
     header {
@@ -21,7 +21,7 @@
       align-items: center;
       padding: 20px 40px;
       background-color: #fff;
-      border-bottom: 2px solid #2A60F1;
+      border-bottom: 1px solid #ccc;
     }
     header div {
       white-space: nowrap;
@@ -34,7 +34,7 @@
     .menu-icon div {
       width: 25px;
       height: 3px;
-      background-color: #333;
+      background-color: #111;
       margin: 5px 0;
     }
     nav {
@@ -43,8 +43,8 @@
     }
     nav a {
       text-decoration: none;
-      color: #2A60F1;
-      font-weight: 700;
+      color: #111;
+      font-weight: 600;
     }
     @media (max-width: 768px) {
       nav {
@@ -54,7 +54,7 @@
         position: absolute;
         top: 70px;
         right: 40px;
-        border: 1px solid #eee;
+        border: 1px solid #ccc;
         padding: 10px 20px;
       }
       nav.active {
@@ -65,40 +65,39 @@
       }
     }
     .cta-button {
-      background-color: #FF6363;
+      background-color: #000;
       color: #fff;
       border: none;
       padding: 12px 24px;
-      border-radius: 8px;
-      font-weight: 700;
+      border-radius: 6px;
+      font-weight: 600;
       font-size: 16px;
       cursor: pointer;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     .hero {
       text-align: center;
-      padding: 120px 20px 80px;
-      background-color: #e6f4ff;
+      padding: 100px 20px 60px;
+      background-color: #f5f5f5;
     }
     .hero h1 {
-      font-size: 48px;
-      font-weight: 800;
+      font-size: 42px;
+      font-weight: 700;
       margin-bottom: 20px;
-      color: #2A60F1;
+      color: #000;
     }
     .hero p {
-      font-size: 20px;
+      font-size: 18px;
       max-width: 700px;
       margin: 0 auto 40px;
       color: #444;
     }
     .section {
-      padding: 80px 20px;
+      padding: 70px 20px;
       text-align: center;
     }
     .section h2 {
-      font-size: 32px;
-      color: #FF6363;
+      font-size: 28px;
+      color: #000;
     }
     .grid {
       display: flex;
@@ -108,31 +107,30 @@
       margin-top: 40px;
     }
     .card {
-      border: 2px solid #2A60F1;
-      border-radius: 12px;
+      border: 1px solid #000;
+      border-radius: 8px;
       padding: 30px;
-      width: 300px;
+      width: 280px;
       background: #fff;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
       text-align: left;
     }
     .card h3 {
       margin-top: 0;
-      color: #FF6363;
-      font-size: 20px;
+      color: #000;
+      font-size: 18px;
     }
     .card p {
       color: #333;
     }
     footer {
-      background-color: #2A60F1;
+      background-color: #000;
       padding: 40px 20px;
       text-align: center;
-      color: white;
+      color: #fff;
     }
     footer a {
-      color: #FFEB3B;
-      text-decoration: none;
+      color: #fff;
+      text-decoration: underline;
       margin: 0 10px;
     }
     .cookie-banner {
@@ -140,11 +138,10 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background: #FFEB3B;
+      background: #000;
       padding: 15px 20px;
-      border-top: 1px solid #ddd;
       font-size: 14px;
-      color: #000;
+      color: #fff;
       text-align: center;
       z-index: 9999;
     }
@@ -153,7 +150,8 @@
 <body>
   <header>
     <div style="display: flex; align-items: center; gap: 10px;">
-      <img src="family _seal.PNG" alt="Johnson Foundation Logo" style="height: 90px;">
+      <img src="/mnt/data/52E4FFA5-2ECA-47F5-8AD3-776897B04617.png" alt="Johnson Foundation Logo" style="height: 40px;">
+      <strong>Johnson Foundation</strong>
     </div>
     <div class="menu-icon" onclick="document.querySelector('nav').classList.toggle('active')">
       <div></div>
@@ -161,39 +159,39 @@
       <div></div>
     </div>
     <nav>
-      <a href="#mission">🌟 Mission</a>
-      <a href="#initiatives">🚀 Initiatives</a>
-      <a href="#contact">📬 Contact</a>
+      <a href="#mission">Mission</a>
+      <a href="#initiatives">Initiatives</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
   <div class="hero">
-    <h1>Empowering Community & Culture 🎉</h1>
-    <p>The <strong>Johnson Foundation</strong> advances <span style="color:#FF6363; font-weight:bold;">belonging</span>, <span style="color:#2A60F1; font-weight:bold;">imagination</span>, and <span style="color:#00B894; font-weight:bold;">opportunity</span> across Black communities and beyond—through education, innovation, and kinship.</p>
-    <button class="cta-button">✨ Get Involved</button>
+    <h1>Empowering Community & Culture</h1>
+    <p>The Johnson Foundation advances belonging, imagination, and opportunity across Black communities and beyond—through education, innovation, and kinship.</p>
+    <button class="cta-button">Get Involved</button>
   </div>
   <div class="section" id="mission">
-    <h2>🌟 Our Mission</h2>
-    <p>To <span style="color:#00B894; font-weight:bold;">foster unity</span>, <span style="color:#2A60F1; font-weight:bold;">honor heritage</span>, and <span style="color:#FF6363; font-weight:bold;">spark forward-thinking solutions</span> through community-building, youth empowerment, and cultural preservation.</p>
+    <h2>Our Mission</h2>
+    <p>To foster unity, honor heritage, and spark forward-thinking solutions through community-building, youth empowerment, and cultural preservation.</p>
   </div>
   <div class="section" id="initiatives">
-    <h2>🚀 What We Do</h2>
+    <h2>What We Do</h2>
     <div class="grid">
       <div class="card">
-        <h3>📚 Education & Workshops</h3>
+        <h3>Education & Workshops</h3>
         <p>College readiness, law and medicine mentorships, and leadership development programs tailored for youth.</p>
       </div>
       <div class="card">
-        <h3>🌍 Griot Vault</h3>
+        <h3>Griot Vault</h3>
         <p>Preserving and amplifying African and diasporic histories in structured digital formats for use in AI and education.</p>
       </div>
       <div class="card">
-        <h3>🧠 The Ether Project</h3>
+        <h3>The Ether Project</h3>
         <p>A think-and-do tank exploring visionary ideas around Black futures, participatory democracy, and creative innovation.</p>
       </div>
     </div>
   </div>
   <div class="section" id="contact">
-    <h2>📬 Contact Us</h2>
+    <h2>Contact Us</h2>
     <p>Email us at <a href="mailto:info@johnsonfoundation.org">info@johnsonfoundation.org</a> or join our newsletter to stay connected.</p>
   </div>
   <footer>
@@ -205,9 +203,9 @@
     <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
   </footer>
   <div class="cookie-banner" id="cookie-banner">
-    🍪 This website uses cookies to ensure you get the best experience.
-    <a href="/privacy">Learn more</a>.
-    <button onclick="document.getElementById('cookie-banner').style.display='none'" style="margin-left: 10px; background: #000; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-weight: 600;">Got it!</button>
+    This website uses cookies to ensure you get the best experience.
+    <a href="/privacy" style="color: #fff; text-decoration: underline;">Learn more</a>.
+    <button onclick="document.getElementById('cookie-banner').style.display='none'" style="margin-left: 10px; background: #fff; color: black; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-weight: 600;">Got it</button>
   </div>
 </body>
 </html>
