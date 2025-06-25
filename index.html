@@ -19,17 +19,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
-  height: 70px; /* Set fixed height */
+  padding: 0 40px;
+  height: 70px;
   background-color: #fff;
   border-bottom: 1px solid #ccc;
-  overflow: visible; /* Allow larger logo to show */
+  overflow: visible;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  height: 70px;
 }
 
 .logo {
-  height: 120px; /* or any size you want */
-  margin-top: -25px; /* Pull the logo upward */
+  height: 120px;
+  object-fit: contain;
 }
+
 
     header div {
       white-space: nowrap;
@@ -157,10 +164,10 @@
 </head>
 <body>
   <header>
-    <div style="display: flex; align-items: center; gap: 10px;">
+    <div class="logo-wrapper">
       <img src="JF.png" alt="Johnson Foundation Logo" class="logo">
-      
     </div>
+
     <div class="menu-icon" onclick="document.querySelector('nav').classList.toggle('active')">
       <div></div>
       <div></div>
