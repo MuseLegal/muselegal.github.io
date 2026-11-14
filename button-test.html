@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bionic Button Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .status-box {
+            background-color: #e3f2fd;
+            border: 2px solid #2196F3;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #1976D2;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        button:active {
+            background-color: #3d8b40;
+        }
+        .test-info {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 5px;
+            border-left: 4px solid #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Bionic Button Test</h1>
+        <p>This page demonstrates interactive button functionality.</p>
+        
+        <div class="status-box" id="statusMessage">
+            Status: Ready
+        </div>
+        
+        <button id="testButton" onclick="runTest()">
+            Run test
+        </button>
+        
+        <div class="test-info">
+            <strong>Instructions:</strong> Click the button above to run the test.
+        </div>
+    </div>
+    
+    <script>
+        function runTest() {
+            const statusElement = document.getElementById('statusMessage');
+            statusElement.textContent = 'Status: Passed';
+            statusElement.style.backgroundColor = '#d4edda';
+            statusElement.style.borderColor = '#28a745';
+            statusElement.style.color = '#155724';
+        }
+    </script>
+</body>
+</html>
